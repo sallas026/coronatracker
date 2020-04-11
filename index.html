@@ -13,7 +13,6 @@
 
 
 
-    <!--    BOOTSTRAP CLASSES-->
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <!-- Google Fonts -->
@@ -23,106 +22,126 @@
     <!-- Material Design Bootstrap -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.15.0/css/mdb.min.css" rel="stylesheet">
 
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.15.0/js/mdb.min.js"></script>
 
 </head>
 
 <body>
+
 
     <!-- Navbar -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
         <div class="container">
 
             <!-- Brand -->
-            <a class="navbar-brand" href="https://mdbootstrap.com/material-design-for-bootstrap/" target="_blank">
+            <a class="navbar-brand" href="https://juslocals.com">
                 <strong>COVID19 TRACKER</strong>
             </a>
 
-            <!-- Collapse -->
-            <!--       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-        aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button> -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#precautions">Precautions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#symptoms">Symptoms</a>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#Contactus">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
 
-            <!-- Links -->
-
-
-            <!-- Left -->
-            <!--         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://mdbootstrap.com/material-design-for-bootstrap/" target="_blank">About MDB</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://mdbootstrap.com/getting-started/" target="_blank">Free download</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://mdbootstrap.com/bootstrap-tutorial/" target="_blank">Free tutorials</a>
-          </li>
-        </ul>
-
-        <!-- Right -->
-            <!--
-        <ul class="navbar-nav nav-flex-icons">
-          <li class="nav-item">
-            <a href="https://www.facebook.com/mdbootstrap" class="nav-link" target="_blank">
-              <i class="fa fa-facebook"></i>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="https://twitter.com/MDBootstrap" class="nav-link" target="_blank">
-              <i class="fa fa-twitter"></i>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="https://github.com/mdbootstrap/bootstrap-material-design" class="nav-link border border-light rounded"
-              target="_blank">
-              <i class="fa fa-github mr-2"></i>MDB GitHub
-            </a>
-          </li>
-        </ul>
-
-      </div>
-
-    
--->
         </div>
     </nav>
+    <!-- Navbar -->
+
+    <video class="video-intro" playsinline autoplay muted loop>
+        <source src="world.mp4" type="video/mp4">
+    </video>
 
 
-    <div class="view">
+    <section id="home">
+        <div class="container">
 
-        <video class="video-intro" playsinline autoplay muted loop>
-            <source src="world.mp4" type="video/mp4">
-        </video>
-        <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+            <div class="row">
+                <div class="analytics-container col-lg-8 mx-auto">
 
-            <div class="text-center white-text mx-5 wow fadeIn">
-                <div class="analytics-container">
-                    <h4>Confirmed</h4>
-
+                    <h3><strong>Total Infected cases in the world </strong></h3>
+                    <h4>Confirmed Cases</h4>
                     <h1 id="confirmed"></h1>
-
-                    <h4>Recovered</h4>
-
+                    <h4>Recovered Cases</h4>
                     <h1 id="recovered"></h1>
-
                     <h4> Total Deaths </h4>
-
                     <h1 id="deaths"><br /></h1>
                 </div>
 
             </div>
         </div>
-    
+    </section>
 
-    <footer>
-    <h6 class="footer" style="color: white"> Developed by Sainath. </h6>
-    </footer>
+    <section id="precautions">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+
+                    <p class="h1-responsive font-weight-bold text-center my-4>About Us">Precautions to Prevent</p>
+
+                    <p>Avoid close contact with people who are sick. Maintain at least three feet distance between yourself and anyone who is coughing or sneezing.</p>
+                    <p>Avoid touching your eyes, nose, and mouth.</p>
+                    <p>Stay home when you are sick.</p>
+                    <p>Cover your cough or sneeze with a tissue, then dispose of the tissue safely.</p>
+                    <p>Clean and disinfect frequently-touched objects and surfaces using a regular household ..</p>
+                    <p>Wash your hands often with soap and water for at least 20 seconds, especially after going to the bathroom, before eating, and after blowing your nose, coughing, or sneezing.</p>
+                    <p>If soap and water are not readily available, use an alcohol-based hand sanitiser with at least 60% alcohol. Always wash hands with soap and water when hands are visibly dirty.</p>
+                    <p>If you have a fever, cough and difficulty breathing, seek medical attention immediately.</p>
+
+
+
+                </div>
+            </div>
         </div>
+    </section>
+
+    <section id="symptoms">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h1 class="h1-responsive font-weight-bold text-center my-4>About Us">Symptoms</h1>
+                    <p class="lead">The most common symptoms of COVID-19 are fever, tiredness, and dry cough. Some patients may have aches and pains, nasal congestion, runny nose, sore throat or diarrhea. These symptoms are usually mild and begin gradually. Some people become infected but don’t develop any symptoms and don't feel unwell. Most people (about 80%) recover from the disease without needing special treatment. Around 1 out of every 6 people who gets COVID-19 becomes seriously ill and develops difficulty breathing. Older people, and those with underlying medical problems like high blood pressure, heart problems or diabetes, are more likely to develop serious illness. People with fever, cough and difficulty breathing should seek medical attention.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="Contactus">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="h1-responsive font-weight-bold text-center my-4">Contact Us</h2>
+
+                    <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
+                        a matter of hours to help you Email:<b>contact@juslocals.com</b></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--    My Custom JS-->
+    <script src="scrolling-nav.js"></script>
 
 </body>
 

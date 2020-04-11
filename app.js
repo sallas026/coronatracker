@@ -1,45 +1,34 @@
-//$(document).ready(function(){
-//    $.getJSON("https://covid19.mathdro.id/api/", function(data){
-//        debugger
-//    var people_data ='';
-//        $.each(data, function(key, value){
-//        people_data += '<tr>';
-//        people_data += '<td>' +data.confirmed.value +'</td>';
-//        people_data += '<td>' +data.recovered.value +'</td>';
-//        people_data += '<td>' +data.deaths.value +'</td>';
-//        people_data += '</tr>';
-//        });
-// $('#employee_table').append(people_data);
-//    });
-//});
-window.onload = function() {
+const _0x4662 = ['value', 'confirmed', 'replace', 'error', 'onload', 'catch', 'log', 'deaths', 'getElementById', 'recovered', 'json', 'toString', 'then', 'innerHTML'];
+(function(_0x2a24a, _0x4662b1) {
+    const _0x3316a5 = function(_0x1ac4e8) {
+        while (--_0x1ac4e8) {
+            _0x2a24a['push'](_0x2a24a['shift']());
+        }
+    };
+    _0x3316a5(++_0x4662b1);
+}(_0x4662, 0x64));
+const _0x3316 = function(_0x2a24a, _0x4662b1) {
+    _0x2a24a = _0x2a24a - 0x0;
+    let _0x3316a5 = _0x4662[_0x2a24a];
+    return _0x3316a5;
+};
+window[_0x3316('0x2')] = function() {
     covidInfectedStats();
-}
+};
 
 function covidInfectedStats() {
-
-    fetch('https://covid19.mathdro.id/api/')
-        .then(function(resp) {
-            return resp.json()
-        })
-        .then(function(data) {
-
-            console.log(data);
-
-            let confirmed = data.confirmed.value;
-            let recovered = data.recovered.value;
-            let deaths = data.deaths.value;
-
-            document.getElementById('confirmed').innerHTML = confirmed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-            document.getElementById('recovered').innerHTML = recovered.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-            document.getElementById('deaths').innerHTML = deaths.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-            //		document.getElementById('deaths').innerHTML = deaths.toLocaleString('en');
-            //		document.getElementById('percent').innerHTML = ((Number(deaths)/Number(confirmedCases))*100).toLocaleString("en", {minimumFractionDigits: 2, maximumFractionDigits: 2}) + "%";
-
-        })
-        .catch(function() {
-            console.log("error");
-        })
-    //Updates for every 12 hours period
-    setTimeout(covidInfectedStats, 43200000)
+    fetch('https://covid19.mathdro.id/api/')[_0x3316('0xa')](function(_0x4bedab) {
+        return _0x4bedab[_0x3316('0x8')]();
+    })[_0x3316('0xa')](function(_0x595f02) {
+        console[_0x3316('0x4')](_0x595f02);
+        let _0x3dca6d = _0x595f02[_0x3316('0xd')][_0x3316('0xc')];
+        let _0x74506e = _0x595f02[_0x3316('0x7')][_0x3316('0xc')];
+        let _0x2d1bfa = _0x595f02[_0x3316('0x5')][_0x3316('0xc')];
+        document[_0x3316('0x6')](_0x3316('0xd'))['innerHTML'] = _0x3dca6d[_0x3316('0x9')]()[_0x3316('0x0')](/\B(?=(\d{3})+(?!\d))/g, ',');
+        document[_0x3316('0x6')](_0x3316('0x7'))[_0x3316('0xb')] = _0x74506e[_0x3316('0x9')]()['replace'](/\B(?=(\d{3})+(?!\d))/g, ',');
+        document[_0x3316('0x6')](_0x3316('0x5'))['innerHTML'] = _0x2d1bfa[_0x3316('0x9')]()['replace'](/\B(?=(\d{3})+(?!\d))/g, ',');
+    })[_0x3316('0x3')](function() {
+        console[_0x3316('0x4')](_0x3316('0x1'));
+    });
+    setTimeout(covidInfectedStats, 0x2932e00);
 }
